@@ -1,0 +1,18 @@
+name: ELThacks
+description: Dev tips and training for ELT
+meta_description: "ELThacks, Development tips and training for ELT"
+
+markdown: redcarpet
+highlighter: rouge
+logo: false
+paginate: 15
+baseurl: /
+domain_name: 'http://elthacks.github.io'
+google_analytics: 'UA-XXXXXXXX-X'
+gems: [jekyll-paginate]
+
+excerpt_separator: <!--more-->
+
+# Details for the RSS feed generator
+url:            'http://elthacks.github.io'
+author:         'Mike Harrison'

@@ -41,6 +41,8 @@
     font-style: normal;
 }
 
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:700,400italic,400|Open+Sans);
+
 /* Apply these base styles to all icons */
 [class^="icon-"]:before, [class*=" icon-"]:before {
     font-family: "casper-icons", "Open Sans", sans-serif;
@@ -102,11 +104,13 @@ html {
 body {
     height: 100%;
     max-height: 100%;
-    font-family: "Merriweather", serif;
+    font-family: "Droid Serif", serif;
     letter-spacing: 0.01rem;
-    font-size: 1.8rem;
+    font-weight: 400;
+    font-size: 20px;
     line-height: 1.75em;
     color: #3A4145;
+    background-color: rgba(241, 241, 234, 1);
     -webkit-font-feature-settings: 'kern' 1;
     -moz-font-feature-settings: 'kern' 1;
     -o-font-feature-settings: 'kern' 1;
@@ -176,11 +180,11 @@ p {
 }
 
 p.lead, span.lead {
-  font-weight: 900;
+  font-weight: 700;
 }
 
 p span.italic {
-  font-weight: 700;
+  font-style: italic;;
 }
 
 ul, ol, dl {
@@ -636,7 +640,7 @@ margin on the iframe, cause it breaks stuff. */
 .no-cover.main-header {
     min-height: 160px;
     max-height: 40%;
-    background: #f5f8fa;
+    background: rgba(255, 255, 255, 1);
 }
 
 .no-cover .page-title {
@@ -674,7 +678,7 @@ margin on the iframe, cause it breaks stuff. */
     max-width: 710px;
     margin: 4rem auto;
     padding-bottom: 4rem;
-    border-bottom: #EBF2F6 1px solid;
+    border-bottom: rgba(202, 201, 206, 1) 1px solid;
     word-break: break-word;
     hyphens: none;
 }
@@ -686,16 +690,16 @@ margin on the iframe, cause it breaks stuff. */
     content: "";
     width: 7px;
     height: 7px;
-    border: #E7EEF2 1px solid;
+    border: rgba(202, 201, 206, 1) 1px solid;
     position: absolute;
     bottom: -5px;
     left: 50%;
     margin-left: -5px;
-    background: #FFF;
+    background: rgba(228, 228, 223, 1);
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     border-radius: 100%;
-    box-shadow: #FFF 0 0 0 5px;
+    box-shadow: rgba(228, 228, 223, 1) 0 0 0 5px;
 }
 
 body:not(.post-template) .post-title {
@@ -713,7 +717,11 @@ body:not(.post-template) .post-title {
 }
 
 .read-more {
-    text-decoration: none;
+    text-decoration: underline;
+    font-size: 1.2rem;
+    &:hover {
+      text-decoration: underline;
+    }
 }
 
 .post-meta {
@@ -1253,7 +1261,7 @@ body:not(.post-template) .post-title {
     position: relative;
     margin: 8rem 0 0 0;
     padding: 0.5rem 15px;
-    border-top: #EBF2F6 1px solid;
+    border-top: rgba(202, 201, 206, 1) 1px solid;
     font-family: "Open Sans", sans-serif;
     font-size: 1rem;
     line-height: 1.75em;
